@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- original:https://codepen.io/boudra/pen/raErwP -->
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
     <style>
         body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    background-color: #191919;
 }
 
 .wrapper {
@@ -30,22 +30,24 @@ button::-moz-focus-inner {
     /* height: 330px; */
     /* width: 350px; */
     font-size: 14px;
+    
     /* box-shadow: 0px 1px 4px rgba(0,0,0,0.4); */
 }
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+    background-color: #202020;
     position: absolute;
-
+    /* border: solid 1px rgb(47, 47, 47); */
+    border-radius: 8px;
 
 }
 
 
 td,th {
     text-align: center;
-    background-color: #fff;
+    background-color: #202020;
 }
 th {
     padding: 10px;
@@ -55,6 +57,7 @@ tr:first-child th {
     font-weight: bold;
     border-left: none;
     border-top: none;
+    border-radius: 8px 8px 0 0;
 }
 td:last-child, th:last-child {
   border-right: none;
@@ -63,9 +66,9 @@ td:last-child, th:last-child {
 th {
     border-top: 1px solid rgba(0,0,0,0.1);
     border-right: 1px solid rgba(0,0,0,0.1);
-    background-color: #9b59b6;
+    background-color: #2E7CD1;
     color: #fff;
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    /* text-shadow: 0px -1px 0px rgba(0,0,0,0.2); */
     font-weight: normal;
 }
 th .any {
@@ -73,17 +76,17 @@ th .any {
     font-weight: normal;
     display: block;
     text-shadow: none;
-    color: rgba(0,0,0,0.4);
+    color: rgba(255, 255, 255, 0.801);
 }
 tr:nth-child(2) th {
     padding: 5px;
 }
 td {
     padding: 0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    /* border-bottom: 1px solid rgb(47, 47, 47); */
 }
 td>span {
-    color: #555;
+    color: rgba(255, 255, 255, 0.81);
     padding: 10px;
     display: block;
     border: 2px solid transparent;
@@ -91,15 +94,15 @@ td>span {
 }
 
 td:nth-child(even)>span {
-    background-color: rgba(0,0,0,0.02);
+    background-color: #191919;
 }
 td:last-child>span,
 td:nth-child(6)>span {
-    color: #9b59b6;
+    color: #355e8a;
 }
 td.avui>span {
     font-weight: bold;
-    background-color: #9b59b6;
+    background-color: #2E7CD1;
     color: #fff;
     border: 2px solid rgba(0,0,0,0.1);
 }
@@ -107,9 +110,14 @@ td.fora > span {
     opacity: 0.2;
 }
 td > span:hover {
-    background: #a57cb6;
+    background: #5c9bdf;
     color: #fff;
 }
+
+tr:nth-child(8) td {
+    border-radius: 8px;
+}
+
 .boto-next, .boto-prev {
     background: rgba(0,0,0,0.1);
     color: #fff;
@@ -140,7 +148,7 @@ footer {
   text-align: center;
   color: #ddd;
   font-weight: normal;
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2); */
   font-size: 0.8em;
   padding: 20px;
 }
@@ -158,38 +166,38 @@ footer a:link {
       </div>
       <script>
         var mesos = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro'
 ];
 
 var dies = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wedensday',
-    'Thursday',
-    'Friday',
-    'Saturday'
+    'Domingo',
+    'Segunda',
+    'Terça',
+    'Quarta',
+    'Quinta',
+    'Sexta',
+    'Sábado'
 ];
 
 var dies_abr = [
-    'Su',
-    'Mo',
-    'Tu',
-    'We',
-    'Th',
-    'Fr',
-    'Sa'
+    'dom',
+    'seg',
+    'ter',
+    'qua',
+    'qui',
+    'sex',
+    'sab'
 ];
 
 Number.prototype.pad = function(num) {
